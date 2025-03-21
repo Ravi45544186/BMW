@@ -1,1 +1,1 @@
-web: python3 app4.py
+web: guicorn app4:app

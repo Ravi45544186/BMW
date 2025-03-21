@@ -1,6 +1,13 @@
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
+@app.route('/')
+def home():
+    return 'Hello World!' # or render a template, etc.
+
+@app.route('/about')
+def about():
+    return "This is the about page."
 
 # Sample in-memory data storage (just for this example)
 data = [
